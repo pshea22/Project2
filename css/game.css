@@ -1,0 +1,30 @@
+.background    { background: rgb(0, 0, 0);
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: rgb(139, 0, 0); }
+.wall          { background: tan;   }
+.tube         { background: green; }
+
+.actor  { position: absolute;  }
+.coin   { background: gold;  }
+.sink   { background: red;  }
+.zoom { background: lime;   }
+.player { background: rgb(255, 255, 255); }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.losttube .player {
+  background: white;
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
